@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Layout Classes</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      /* stylelint-disable block-no-empty */
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 992px;
+        margin: auto;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+      }
+
+      .column {
+        flex-basis: calc(100% / 3);
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Conjuring</h1>
+    <!-- Complete the HTML here -->
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img
+            src="https://m.media-amazon.com/images/I/51XZ4OitzbL._AC_.jpg"
+            alt="The Conjuring" />
+          <h3>The Conjuring</h3>
+          <p>
+            We follow famous paranormal investigators, Ed and Lorraine Warren,
+            to Rhode Island to a family in Harrisville where they believe their
+            farm house is haunted by a witch.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BZjU5OWVlN2EtODNlYy00MjhhLWI0MDUtMTA3MmQ5MGMwYTZmXkEyXkFqcGdeQXVyNjE5MTM4MzY@._V1_.jpg"
+            alt="The Conjuring 2" />
+          <h3>The Conjuring 2</h3>
+          <p>
+            We follow the Warrens to a London borough where a family believes
+            they are being haunted by a presence.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            src="https://i1.wp.com/www.horrorsociety.com/wp-content/uploads/2021/06/poster-6.jpg?fit=550%2C815&ssl=1"
+            alt="The Conjuring: The Devil Made Me Do It" />
+          <h3>The Conjuring: The Devil Made Me Do It</h3>
+          <p>
+            We follow the Warrens as they investigate a case in which someone
+            pleads not guilty due to insanity which that person believes is
+            caused by a demonic possession.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
